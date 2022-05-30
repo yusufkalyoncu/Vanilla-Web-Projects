@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: rgb(245, 245, 245);
+}
+
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.container{
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-element{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.form-element label{
+    display: block;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+.form-element input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px; 
+}
+
+.button{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(106, 235, 129);
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+    
+small{
+    color: rgb(252, 45, 45);
+    visibility: hidden;
+}
+#submit-message{
+    color: rgb(106, 235, 129);
+}
+
+.form-element input:focus{
+    border: 2px solid rgba(50,50,50,0.5);
+    outline: 0;
+}
+
+.button:hover{
+    background-color: rgb(70, 227, 99);
+    color: rgba(0,0,0,1);
+}
