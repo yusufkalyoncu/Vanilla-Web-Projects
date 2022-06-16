@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title id="title">Pomodoro Clone</title>
+    <link rel="icon" href="assets/favicon-pomodoro.ico" type="image/x-icon" id="favicon">
+</head>
+
+<body>
+    <nav class="top-nav">
+        <h3 id="title"><i class="fa-solid fa-circle-check"></i> Pomofocus</h3>
+        <div class="buttons">
+            <button class="report"><i class="fa-solid fa-chart-simple"></i> Report</button>
+            <button class="settings"><i class="fa-solid fa-gear"></i> Settings</button>
+            <button class="login"><i class="fa-solid fa-circle-user"></i> Login</button>
+        </div>
+    </nav>
+    <hr id="top-line">
+
+    <div class="big-container">
+        <div class="container">
+            <nav>
+                <button class="pomodoro clicked">Pomodoro</button>
+                <button class="short-break">Short Break</button>
+                <button class="long-break">Long Break</button>
+            </nav>
+            <h1 id="time">25:00</h1>
+            <button class="start-button">START</button>
+        </div>
+
+        <div class="counter-container">
+            <p class="counter">#1</p>
+            <p class="text-info">Time to focus!</p>
+        </div>
+        <div class="task-container">
+            <div class="task-nav">
+                <p>Tasks</p>
+                <button><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <hr id="bottom-line">
+            <div class="tasks">
+                <button class="add-task">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    Add Task
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

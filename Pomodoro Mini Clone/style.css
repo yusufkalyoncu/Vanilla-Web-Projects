@@ -1,0 +1,184 @@
+:root{
+    --bgcolor: rgb(217, 85, 80);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgcolor);
+    color: white;
+}
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#top-line{
+    width: 50%;
+    height: 1px;
+    color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
+    border-width: 0;
+}
+
+.big-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 480px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.container nav{
+    display: flex;
+}
+#time{
+    font-size: 120px;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+.buttons button{
+    border: none;
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 4px;
+    background-color:rgba(255,255,255,0.2);
+    color: white;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.buttons button:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.container nav button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 4px 7px 4px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container nav button.clicked{
+    background-color: transparent;
+    border: none;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 15px;
+    padding: 4px 7px 4px 7px;
+    border-radius: 4px;
+}
+
+
+.start-button{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 50px 15px 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px rgba(220, 220, 220, 1);
+    color: var(--bgcolor);
+    cursor: pointer;
+}
+.start-button.clicked{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 55px 15px 55px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    transform: translateY(5px);
+    color: var(--bgcolor);
+}
+.start-button:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+.container nav button:active,
+.buttons button:active{
+    transform: translateY(1px);
+}
+
+.counter-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.task-container{
+    max-width: 480px;
+    width: 100%;
+}
+.task-container .task-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.task-container .task-nav p{
+    font-size: 16px;
+}
+.task-container .task-nav button{
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.25);
+}
+.task-container .task-nav button:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+#bottom-line{
+    width: 100%;
+    height: 2px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-width: 0;
+}
+.add-task{
+    margin-top: 10px;
+    max-width: 480px;
+    width: 100%;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0,0,0,0.1);
+}
+.add-task:hover{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0,0,0,0.15);
+}
