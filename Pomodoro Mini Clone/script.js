@@ -133,6 +133,6 @@ setInterval(function () {
         }
         updateTexts();
     }
-}, 15);
+}, 1000);
 
 
